@@ -1,72 +1,75 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Croissant One", serif;
 }
 
 body {
-  background-color: white;
-}
-
-#details {
-  border: 2px solid black;
-  margin: 10px;
-}
-#account {
-  border: 2px solid black;
-  margin: 10px;
+  background-color: #f0f2f5;
+  color: 1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-  margin-left: 250px;
-  height: 20px;
-  padding: 30px;
-  color: #00022e;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0c2340;
 }
 
-div {
-  margin: 10px;
-  color: #00022e;
+#details {
+  background-color: #ffffff;
+  border: 2px solid #e1e4e8;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 550px;
+  margin-bottom: 25px;
 }
+#account {
+  background-color: #ffffff;
+  border: 2px solid #e1e4e8;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 550px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #0c2340;
+  font-size: 22px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f0f2f5;
+  padding-bottom: 10px;
+}
+
 label {
-  font-size: 27px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a5568;
+  display: block;
+  margin-bottom: 5px;
+}
+#details div,
+#account div {
+  margin-bottom: 15px;
+}
+input,
+select {
+  width: 100%;
+  height: 38px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
 
-#one {
-  background-color: rgb(208, 213, 219);
-  width: 90px;
-  height: 20px;
-  border: none;
-  color: black;
-  border-radius: 2px;
-}
-#two {
-  background-color: rgb(208, 213, 219);
-  width: 90px;
-  border: none;
-  color: black;
-  border-radius: 2px;
-}
-
-#three {
-  background-color: rgb(208, 213, 219);
-  margin-left: 25px;
-  width: 90px;
-  border: none;
-  color: black;
-  border-radius: 2px;
-}
-input {
-  height: 29px;
-  font-size: 27px;
-  border: none;
-  border-radius: 10px;
-  color: black;
-  background-color: rgb(207, 219, 233);
-}
-
-footer {
-  margin-top: 20px;
-  font-size: 20px;
-  color: rgb(86, 39, 39);
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0 5px 0 10px;
 }
