@@ -60,7 +60,7 @@ select {
   box-sizing: border-box;
 }
 
-/ input:focus,
+input:focus,
 select:focus {
   border-color: #3498db;
   outline: none;

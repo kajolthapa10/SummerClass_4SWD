@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+#main {
+  width: 600px;
+  height: 800px;
+  background-color: white;
+  margin-left: 50px;
+}
+
+#heading {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 50px;
+  font-size: 20px;
+  font-weight: 550;
+}
+
+#subHeading {
+  text-align: center;
+}
+
+#date {
+  margin-top: 60px;
+}
+
+#info {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#greet {
+  margin-bottom: 20px;
+}
