@@ -1,0 +1,161 @@
+/* src/App.css */
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+  background-color: #212529;
+  padding: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header-logo:hover {
+  color: #0d6efd;
+}
+
+.header-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  color: #adb5bd;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+  color: white;
+  background-color: #0d6efd;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-links {
+    gap: 15px;
+  }
+}
+
+/* Add Todo Section */
+#add-todo-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  transition: all 0.3s;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Todo Items */
+.todo-item {
+  background: white;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.todo-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.todo-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #212529;
+  margin-bottom: 8px;
+}
+
+.todo-desc {
+  color: #6c757d;
+  margin-bottom: 12px;
+}
+
+/* Delete Button */
+.btn-danger {
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+
+/* Empty State */
+.no-todos {
+  text-align: center;
+  padding: 60px 20px;
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  background: #343a40;
+  color: #adb5bd;
+}
+
+.form-label {
+  margin-right: 10px;
+}
+.btn {
+  background: #ffffe0;
+  border: 2px solid #ee82ee;
+}
+.text-center {
+  text-align: center;
+}
