@@ -1,0 +1,202 @@
+/* ==========================================
+   FORM PAGE
+========================================== */
+
+.form-page{
+
+    padding:50px 0;
+
+}
+
+.back-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    margin-bottom:30px;
+
+    transition:.3s;
+
+}
+
+.back-link:hover{
+
+    color:var(--primary-dark);
+
+}
+
+.page-title{
+
+    margin-bottom:35px;
+
+}
+
+.page-title h1{
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+.page-title p{
+
+    color:var(--text-light);
+
+}
+
+.form-card{
+
+    background:var(--surface);
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:25px;
+
+}
+
+.form-group label{
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.form-group input,
+
+.form-group select,
+
+.form-group textarea{
+
+    width:100%;
+
+    padding:14px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-family:inherit;
+
+    outline:none;
+
+    transition:.3s;
+
+    background:white;
+
+}
+
+.form-group input:focus,
+
+.form-group select:focus,
+
+.form-group textarea:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(127,170,114,.15);
+
+}
+
+textarea{
+
+    resize:vertical;
+
+    min-height:140px;
+
+}
+
+.form-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:35px;
+
+}
+
+.save-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    padding:14px 24px;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.save-btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.cancel-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:14px 24px;
+
+    border-radius:12px;
+
+    background:#F3F4F6;
+
+    color:var(--text);
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.cancel-btn:hover{
+
+    background:#E5E7EB;
+
+}
+

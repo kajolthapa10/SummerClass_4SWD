@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>View Book | Sajilo Library</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/view-book.css" />
+  </head>
+
+  <body>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <i class="fa-solid fa-book-open"></i>
+
+          <h2>Sajilo Library</h2>
+        </div>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+
+            <li><a href="books.html" class="active">Books</a></li>
+
+            <li><a href="authors.html">Authors</a></li>
+
+            <li><a href="genres.html">Genres</a></li>
+          </ul>
+        </nav>
+
+        <div class="admin-profile">
+          <i class="fa-solid fa-circle-user"></i>
+
+          <span>Admin</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= VIEW BOOK ================= -->
+
+    <main class="view-book">
+      <div class="container">
+        <!-- Back Button -->
+
+        <a href="books.html" class="back-link">
+          <i class="fa-solid fa-arrow-left"></i>
+
+          Back to Books
+        </a>
+
+        <!-- Page Title -->
+
+        <div class="page-title">
+          <h1>Book Details</h1>
+
+          <p>View complete information about this book.</p>
+        </div>
+
+        <!-- Main Card -->
+
+        <div class="book-details">
+          <!-- Left -->
+
+          <div class="book-image">
+            <img
+              src="images/atomic-habits.jpg"
+              alt="Book Cover"
+              class="book-cover"
+            />
+          </div>
+
+          <!-- Right -->
+
+          <div class="book-info">
+            <h2>Atomic Habits</h2>
+
+            <div class="info-row">
+              <strong>Author</strong>
+
+              <span>James Clear</span>
+            </div>
+
+            <div class="info-row">
+              <strong>Genre</strong>
+
+              <span>Self Help</span>
+            </div>
+
+            <div class="info-row">
+              <strong>Stock</strong>
+
+              <span>12 Copies</span>
+            </div>
+
+            <div class="description">
+              <h3>Description</h3>
+
+              <p>
+                Atomic Habits teaches practical strategies for building good
+                habits, breaking bad ones, and making small changes that lead to
+                remarkable results.
+              </p>
+            </div>
+
+            <div class="action-buttons">
+              <a href="book-form.html" class="edit-btn">
+                <i class="fa-solid fa-pen"></i>
+
+                Edit Book
+              </a>
+
+              <a href="#" class="delete-btn">
+                <i class="fa-solid fa-trash"></i>
+
+                Delete
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

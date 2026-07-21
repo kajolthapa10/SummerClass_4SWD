@@ -1,0 +1,193 @@
+/* ==========================================
+   VIEW BOOK PAGE
+========================================== */
+
+.view-book{
+
+    padding:50px 0;
+
+}
+
+.back-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    margin-bottom:30px;
+
+    transition:.3s;
+
+}
+
+.back-link:hover{
+
+    color:var(--primary-dark);
+
+}
+
+.page-title{
+
+    margin-bottom:35px;
+
+}
+
+.page-title h1{
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+.page-title p{
+
+    color:var(--text-light);
+
+}
+
+.book-details{
+
+    background:var(--surface);
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
+    padding:40px;
+
+    display:grid;
+
+    grid-template-columns:300px 1fr;
+
+    gap:50px;
+
+}
+
+.book-cover{
+
+    width:100%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    background:var(--primary-light);
+
+}
+
+.book-info h2{
+
+    font-size:34px;
+
+    margin-bottom:30px;
+
+}
+
+.info-row{
+
+    display:flex;
+
+    margin-bottom:18px;
+
+}
+
+.info-row strong{
+
+    width:120px;
+
+    color:var(--text);
+
+}
+
+.info-row span{
+
+    color:var(--text-light);
+
+}
+
+.description{
+
+    margin-top:35px;
+
+}
+
+.description h3{
+
+    margin-bottom:12px;
+
+}
+
+.description p{
+
+    line-height:1.8;
+
+    color:var(--text-light);
+
+}
+
+.action-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:40px;
+
+}
+
+.edit-btn,
+
+.delete-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 24px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.edit-btn{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.edit-btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.delete-btn{
+
+    background:#FDECEC;
+
+    color:#C62828;
+
+}
+
+.delete-btn:hover{
+
+    background:#FAD4D4;
+
+}

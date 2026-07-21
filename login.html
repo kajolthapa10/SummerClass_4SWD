@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Admin Login | Sajilo Library</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- Login CSS -->
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+
+  <body>
+    <main class="login-container">
+      <!-- ================= LEFT PANEL ================= -->
+
+      <section class="left-panel">
+        <div class="brand">
+          <i class="fa-solid fa-book-open"></i>
+
+          <h1>Sajilo Library</h1>
+
+          <p>Simple library management for books, authors, and genres.</p>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <i class="fa-solid fa-book"></i>
+            <span>Manage Books</span>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-user-pen"></i>
+            <span>Manage Authors</span>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-tags"></i>
+            <span>Organize Genres</span>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-boxes-stacked"></i>
+            <span>Track Inventory</span>
+          </div>
+        </div>
+
+        <p class="tagline">Organize knowledge. Simplify management.</p>
+      </section>
+
+      <!-- ================= RIGHT PANEL ================= -->
+
+      <section class="right-panel">
+        <div class="login-card">
+          <h2>Welcome Back 👋</h2>
+
+          <p>Sign in to access your library dashboard.</p>
+
+          <form>
+            <div class="input-group">
+              <label for="username">Username</label>
+
+              <input
+                type="text"
+                id="username"
+                placeholder="Enter your username"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="password">Password</label>
+
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+
+            <div class="options">
+              <label class="remember">
+                <input type="checkbox" />
+
+                Remember me
+              </label>
+            </div>
+
+            <button type="submit" class="login-btn">Login</button>
+          </form>
+
+          <p class="help-text">
+            Need help?
+            <a href="#">Contact Administrator</a>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

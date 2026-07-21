@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Books | Sajilo Library</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/books.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <i class="fa-solid fa-book-open"></i>
+
+          <h2>Sajilo Library</h2>
+        </div>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+
+            <li><a href="books.html" class="active">Books</a></li>
+
+            <li><a href="authors.html">Authors</a></li>
+
+            <li><a href="genres.html">Genres</a></li>
+          </ul>
+        </nav>
+
+        <div class="admin-profile">
+          <i class="fa-solid fa-circle-user"></i>
+
+          <span>Admin</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+
+    <main>
+      <section class="books-page">
+        <div class="container">
+          <div class="page-header">
+            <div>
+              <h1>Books</h1>
+
+              <p>Manage your library collection.</p>
+            </div>
+
+            <a href="book-form.html" class="add-btn">
+              <i class="fa-solid fa-plus"></i>
+
+              Add Book
+            </a>
+          </div>
+
+          <!-- Search and Filter -->
+
+          <div class="toolbar">
+            <div class="search-box">
+              <input type="text" placeholder="Search books..." />
+
+              <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+
+            <select>
+              <option>All Genres</option>
+
+              <option>Technology</option>
+
+              <option>Novel</option>
+
+              <option>Self Help</option>
+            </select>
+          </div>
+
+          <!-- Books Table -->
+
+          <div class="table-card">
+            <table>
+              <thead>
+                <tr>
+                  <th>Cover</th>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>Genre</th>
+                  <th>Stock</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      src="images/atomic-habits.jpg"
+                      alt="Atomic Habits"
+                      class="book-cover"
+                    />
+                  </td>
+
+                  <td>Atomic Habits</td>
+
+                  <td>James Clear</td>
+
+                  <td>Self Help</td>
+
+                  <td>12</td>
+
+                  <td>
+                    <span class="status available">Available</span>
+                  </td>
+
+                  <td>
+                    <a href="view-book.html" class="action-btn">View</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img
+                      src="images/clean-code.jpg"
+                      alt="Clean Code"
+                      class="book-cover"
+                    />
+                  </td>
+
+                  <td>Clean Code</td>
+
+                  <td>Robert C. Martin</td>
+
+                  <td>Technology</td>
+
+                  <td>3</td>
+
+                  <td>
+                    <span class="status low">Low Stock</span>
+                  </td>
+
+                  <td>
+                    <a href="view-book.html" class="action-btn">View</a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <img
+                      src="images/alchemist.jpg"
+                      alt="The Alchemist"
+                      class="book-cover"
+                    />
+                  </td>
+
+                  <td>The Alchemist</td>
+
+                  <td>Paulo Coelho</td>
+
+                  <td>Novel</td>
+
+                  <td>0</td>
+
+                  <td>
+                    <span class="status out">Out of Stock</span>
+                  </td>
+
+                  <td>
+                    <a href="view-book.html" class="action-btn">View</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

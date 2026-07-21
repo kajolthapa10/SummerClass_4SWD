@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard Library Management System</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!--NAVBAR-->
+
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <i class="fa-solid fa-book-open"></i>
+
+          <h2>Sajilo Library</h2>
+        </div>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Dashboard</a></li>
+
+            <li><a href="books.html">Books</a></li>
+
+            <li><a href="authors.html">Authors</a></li>
+
+            <li><a href="genres.html">Genres</a></li>
+          </ul>
+        </nav>
+
+        <div class="admin-profile">
+          <i class="fa-solid fa-circle-user"></i>
+
+          <span>Admin</span>
+        </div>
+      </div>
+    </header>
+
+
+    <main>
+      <!-- Greeting -->
+      <section class="dashboard">
+        <div class="container dashboard-content">
+          <div class="dashboard-text">
+            <h1>Welcome back, Admin 👋</h1>
+
+            <p>
+              Manage books, authors, genres and library records from one
+              dashboard.
+            </p>
+
+            <div class="search-box">
+              <input type="text" placeholder="Search books..." />
+
+              <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="dashboard-stats">
+            <div class="stat-card">
+              <h2>125</h2>
+              <span>Books</span>
+            </div>
+
+            <div class="stat-card">
+              <h2>28</h2>
+              <span>Authors</span>
+            </div>
+
+            <div class="stat-card">
+              <h2>12</h2>
+              <span>Genres</span>
+            </div>
+
+            <div class="stat-card">
+              <h2>18</h2>
+              <span>Low Stock</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="quick-actions">
+        <div class="container">
+          <h2>Manage Library</h2>
+          <p class="section-subtitle">
+            Access different sections of your library system.
+          </p>
+          <div class="cards">
+            <a href="books.html" class="card">
+              <i class="fa-solid fa-book"></i>
+
+              <h3>Books</h3>
+
+              <p>View, search and manage every book in the library.</p>
+
+              <span>Open →</span>
+            </a>
+
+            <a href="authors.html" class="card">
+              <i class="fa-solid fa-user-pen"></i>
+
+              <h3>Authors</h3>
+
+              <p>Add new authors or edit existing author information.</p>
+
+              <span>Open →</span>
+            </a>
+
+            <a href="genres.html" class="card">
+              <i class="fa-solid fa-tags"></i>
+
+              <h3>Genres</h3>
+
+              <p>Organize and manage all book categories.</p>
+
+              <span>Open →</span>
+            </a>
+
+            <a href="book-form.html" class="card">
+              <i class="fa-solid fa-circle-plus"></i>
+
+              <h3>Add Book</h3>
+
+              <p>Quickly register a new book into the library.</p>
+
+              <span>Open →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="recent-books">
+        <div class="container">
+          <h2>Recent Books</h2>
+          <p class="section-subtitle">
+            Latest books available in your library.
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+
+                <th>Author</th>
+
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Atomic Habits</td>
+
+                <td>James Clear</td>
+
+                <td>Available</td>
+              </tr>
+
+              <tr>
+                <td>Clean Code</td>
+
+                <td>Robert C. Martin</td>
+
+                <td>Borrowed</td>
+              </tr>
+
+              <tr>
+                <td>The Psychology of Money</td>
+
+                <td>Morgan Housel</td>
+
+                <td>Available</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <p>© 2026 Library Management System</p>
+    </footer>
+  </body>
+</html>
