@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Genres | Sajilo Library</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/genres.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container">
+
+            <div class="logo">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <h2>Sajilo Library</h2>
+
+            </div>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li><a href="index.html">Dashboard</a></li>
+
+                    <li><a href="books.html">Books</a></li>
+
+                    <li><a href="authors.html">Authors</a></li>
+
+                    <li><a href="genres.html" class="active">Genres</a></li>
+
+                </ul>
+
+            </nav>
+
+            <div class="admin-profile">
+
+                <i class="fa-solid fa-circle-user"></i>
+
+                <span>Admin</span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ================= GENRES ================= -->
+
+    <main>
+
+        <section class="genres-page">
+
+            <div class="container">
+
+                <!-- Page Header -->
+
+                <div class="page-header">
+
+                    <div>
+
+                        <h1>Genres</h1>
+
+                        <p>Manage all book genres in your library.</p>
+
+                    </div>
+
+                    <a href="genre-form.html" class="add-btn">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Add Genre
+
+                    </a>
+
+                </div>
+
+                <div class="toolbar">
+
+                    <div class="search-box">
+
+                        <input type="text" placeholder="Search genres...">
+
+                        <button>
+
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- Genres Table -->
+
+                <div class="table-card">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Genre Name</th>
+
+                                <th>Description</th>
+
+                                <th>Total Books</th>
+
+                                <th>Action</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>Technology</td>
+
+                                <td>Programming, software and computing books.</td>
+
+                                <td>14</td>
+
+                                <td>
+                                    <a href="genre-form.html" class="action-btn">
+                                        Edit
+                                    </a>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Self Help</td>
+
+                                <td>Books focused on personal growth and habits.</td>
+
+                                <td>9</td>
+
+                                <td>
+                                    <a href="genre-form.html" class="action-btn">
+                                        Edit
+                                    </a>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>Novel</td>
+
+                                <td>Fictional stories and literature.</td>
+
+                                <td>18</td>
+
+                                <td>
+                                    <a href="genre-form.html" class="action-btn">
+                                        Edit
+                                    </a>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
