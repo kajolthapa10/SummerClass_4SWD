@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="form.css" />
+    <title>User Registration</title>
+  </head>
+  <body>
+    <h1>User Registration</h1>
+
+    <form id="registrationForm">
+      <h2>Personal Details</h2>
+
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" />
+        <span class="error" id="firstNameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" />
+        <span class="error" id="lastNameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" min="1" max="120" />
+        <span class="error" id="ageError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender">
+          <option value="">Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Profile Picture:</label>
+        <input
+          type="file"
+          id="profilePic"
+          accept="image/*"
+          style="display: none"
+        />
+        <button type="button" id="browseBtn">Browse...</button>
+        <span id="fileName">No file selected</span>
+        <div id="imagePreview" style="margin-top: 10px"></div>
+      </div>
+
+      <h2>Account Details</h2>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" />
+        <span class="error" id="emailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+        <span class="error" id="passwordError"></span>
+      </div>
+
+      <div class="radio-group">
+        <label>Role:</label>
+        <input type="radio" id="roleAdmin" name="role" value="Admin" />
+        <label for="roleAdmin">Admin</label>
+        <input type="radio" id="roleUser" name="role" value="User" checked />
+        <label for="roleUser">User</label>
+      </div>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms" />
+        <label for="terms">I agree with the terms and conditions.</label>
+        <span class="error" id="termsError"></span>
+      </div>
+
+      <div style="margin-top: 25px; text-align: center">
+        <button type="submit">Register</button>
+        <button type="button" id="resetBtn">Reset</button>
+      </div>
+    </form>
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="success-popup">
+      <h3>Registration Successful!</h3>
+      <p id="popupMessage"></p>
+      <button onclick="closePopup()">OK</button>
+    </div>
+
+    <footer>©2026 My Todo List. All rights reserved.</footer>
+    <script src="registration.js"></script>
+  </body>
+</html>
