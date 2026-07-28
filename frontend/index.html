@@ -52,13 +52,12 @@
       </div>
     </header>
 
-
     <main>
       <!-- Greeting -->
       <section class="dashboard">
         <div class="container dashboard-content">
           <div class="dashboard-text">
-            <h1>Welcome back, Admin </h1>
+            <h1>Welcome back, Admin</h1>
 
             <p>
               Manage books, authors, genres and library records from one
@@ -97,7 +96,6 @@
           </div>
         </div>
       </section>
-
 
       <section class="quick-actions">
         <div class="container">
@@ -149,7 +147,6 @@
         </div>
       </section>
 
-
       <section class="recent-books">
         <div class="container">
           <h2>Recent Books</h2>
@@ -198,10 +195,13 @@
       </section>
     </main>
 
-    <!-- ================= FOOTER ================= -->
-
     <footer>
       <p>© 2026 Library Management System</p>
     </footer>
   </body>
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
 </html>
