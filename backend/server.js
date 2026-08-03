@@ -1,4 +1,3 @@
-
 require('dotenv').config();
 const path = require('path');
 const express = require('express');
@@ -50,6 +49,12 @@ app.post('/api/authors', (req, res) => {
   res.json({ success: true, message: 'Author added.' });
 });
 
+app.put('/api/authors/:id', (req, res) => {
+  const { name, nationality } = req.body;
+  db.prepare('UPDATE authors SET name=?, nationality=? WHERE id=?').run(name, nationality, req.params.id);
+  res.json({ success: true, message: 'Author updated.' });
+});
+
 app.delete('/api/authors/:id', (req, res) => {
   db.prepare('DELETE FROM authors WHERE id = ?').run(req.params.id);
   res.json({ success: true, message: 'Author deleted.' });
@@ -68,6 +73,12 @@ app.post('/api/genres', (req, res) => {
   res.json({ success: true, message: 'Genre added.' });
 });
 
+app.put('/api/genres/:id', (req, res) => {
+  const { name, description } = req.body;
+  db.prepare('UPDATE genres SET name=?, description=? WHERE id=?').run(name, description, req.params.id);
+  res.json({ success: true, message: 'Genre updated.' });
+});
+
 app.delete('/api/genres/:id', (req, res) => {
   db.prepare('DELETE FROM genres WHERE id = ?').run(req.params.id);
   res.json({ success: true, message: 'Genre deleted.' });
@@ -77,6 +88,12 @@ app.delete('/api/genres/:id', (req, res) => {
 app.get('/api/books', (req, res) => {
   const books = db.prepare('SELECT * FROM books').all();
   res.json({ success: true, data: books });
+});
+
+app.get('/api/books/:id', (req, res) => {
+  const book = db.prepare('SELECT * FROM books WHERE id = ?').get(req.params.id);
+  if (!book) return res.status(404).json({ success: false, message: 'Book not found.' });
+  res.json({ success: true, data: book });
 });
 
 app.post('/api/books', (req, res) => {
