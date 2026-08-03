@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
-
 :root {
   --bg: #f8f7f4;
   --white: #ffffff;
@@ -266,4 +265,21 @@ a {
   color: var(--primary-dark);
 
   font-weight: 600;
+}
+.signup-link {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+  color: #687b88;
+}
+
+.signup-link a {
+  color: #62875a;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
 }
